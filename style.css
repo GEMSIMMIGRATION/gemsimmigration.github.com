@@ -160,3 +160,9 @@ footer {
   font-weight: 600;
   white-space: nowrap;
 }
+.logo-link,
+.logo-link:visited,
+.logo-link:hover,
+.logo-link:active {
+  color: white;
+}

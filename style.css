@@ -186,3 +186,13 @@ footer {
   text-decoration: none;       /* No underline on hover */
   outline: none;               /* Remove default focus outline */
 }
+/* Center WhatsApp section */
+.whatsapp-container {
+  text-align: center;  /* Centers text and link inside */
+  margin-top: 20px;    /* Optional spacing above */
+}
+
+/* Optional: spacing between number and button */
+.whatsapp-container p {
+  margin-bottom: 10px;
+}

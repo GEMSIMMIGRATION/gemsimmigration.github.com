@@ -25,6 +25,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar .logo {
@@ -252,4 +255,21 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.whatsapp-btn {
+  border-color: #25d366;
+  color: #25d366;
+}
+
+.whatsapp-btn:hover {
+  background: #25d366;
+  color: white;
 }

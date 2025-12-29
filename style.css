@@ -293,4 +293,10 @@ footer {
 .whatsapp-float:hover {
   transform: scale(1.08);
 }
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+  fill: #ffffff;
+  display: block;
+}
 

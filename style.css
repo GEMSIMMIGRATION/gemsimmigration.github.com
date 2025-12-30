@@ -280,3 +280,27 @@ footer {
   color: #333;
   min-height: 40px;
 }
+/* FIX: Contact page WhatsApp button centering + box */
+.whatsapp-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whatsapp-container .whatsapp-btn {
+  display: inline-block;
+  margin: 12px auto 0;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #25d366;
+  color: #25d366;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* Hover stays clean */
+.whatsapp-container .whatsapp-btn:hover {
+  background: #25d366;
+  color: white;
+}

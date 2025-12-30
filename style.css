@@ -331,3 +331,89 @@ footer {
   color: #333;
   min-height: 40px;
 }
+/* 1. Darker hero overlay */
+.hero::before {
+  background: rgba(0,0,0,0.55); /* slightly darker overlay for readability */
+}
+
+/* 2. Button hover transitions */
+.btn {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 3. Card hover color accent */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-color: #007bff; /* subtle color accent */
+}
+
+/* 4. Section spacing */
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 20px; /* more top/bottom spacing */
+}
+
+/* 5. Footer - social icons & quick links */
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+footer .socials {
+  margin: 10px 0;
+}
+
+footer .socials a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #004f7c;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #25d366;
+}
+
+/* Quick links */
+footer .quick-links a {
+  margin: 0 10px;
+  color: #004f7c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer .quick-links a:hover {
+  color: #25d366;
+}
+
+/* 6. Mobile responsive navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* hide by default */
+  }
+  .navbar ul.active {
+    display: flex;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+}

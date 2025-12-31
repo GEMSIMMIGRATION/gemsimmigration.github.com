@@ -304,3 +304,79 @@ footer {
   background: #25d366;
   color: white;
 }
+/* ===== Home Custom Section ===== */
+.home-custom {
+  margin-top: 60px;
+}
+
+.section-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+/* Split layout */
+.split {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-text {
+  flex: 1;
+}
+
+.split-text h3 {
+  color: #004f7c;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.split-text p {
+  text-align: left;
+}
+
+.split-img {
+  flex: 1;
+}
+
+.split-img img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Review box */
+.review-box {
+  background: #f7f9fb;
+  border-left: 5px solid #004f7c;
+  padding: 30px;
+  max-width: 800px;
+  margin: 80px auto 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.review-box strong {
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  color: #004f7c;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .split,
+  .split.reverse {
+    flex-direction: column;
+  }
+
+  .split-text p {
+    text-align: center;
+  }
+}

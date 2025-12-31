@@ -453,3 +453,9 @@ footer {
 .social-card.instagram {
   border-top: 4px solid #DD2A7B;
 }
+.visit-counter {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}

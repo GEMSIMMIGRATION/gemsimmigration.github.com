@@ -194,5 +194,44 @@
   </div>
 </div>
 
+<script>
+(function () {
+  try {
+    const overlay = document.getElementById("signup-overlay");
+    const closeBtn = overlay?.querySelector(".signup-close");
+
+    if (!overlay || !closeBtn) return;
+
+    // Open popup on page load
+    window.addEventListener("load", () => {
+      overlay.classList.add("active");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    });
+
+    function closePopup() {
+      overlay.classList.remove("active");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    closeBtn.addEventListener("click", closePopup);
+
+    // Close when clicking outside modal
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) closePopup();
+    });
+
+    // Close on ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closePopup();
+    });
+
+  } catch (err) {
+    console.error("Signup popup error:", err);
+  }
+})();
+</script>
+
 </body>
 </html>

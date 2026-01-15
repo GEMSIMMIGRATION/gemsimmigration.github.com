@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Newsletter Signup | Gems Immigration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Optional: reuse your main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f6f7f9;
+      color: #222;
+    }
+
+    .newsletter-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .newsletter-card {
+      width: 100%;
+      max-width: 720px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      padding: 24px;
+    }
+
+    .newsletter-card h1 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .newsletter-card p {
+      text-align: center;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="newsletter-wrapper">
+    <div class="newsletter-card">
+      <h1>Join Our Newsletter</h1>
+      <p>Get immigration updates, tips, and announcements directly to your inbox.</p>
+
+      <iframe
+        src="https://mailify.base44.app/Subscribe?hash=91nr7rwoqwf7w82enqzgn6"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+      ></iframe>
+    </div>
+  </div>
+</body>
+</html>

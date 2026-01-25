@@ -646,3 +646,7 @@ footer {
     border-radius: 0;
   }
 }
+
+.split-text p {
+  text-align: justify;
+}
